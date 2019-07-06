@@ -4,16 +4,22 @@
 	<meta charset="UTF-8">
 	<title>О компании</title>	
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<!--<link rel="stylesheet" media="all and (orientation:portrait)" href="portrait.css">-->
+
 </head>
+
 <body>
 
-	<header>
-		<div id="head">
-			<div id="text">
-				<p id="company">Компания ООО «ГЕОТЕСТЕР»</p>
-				<p id="company_text">надежный поставщик испытательного оборудования <br> для дорожного строительства</p>
-			</div>
+	<!--begin header-->
+
+	<div id="head">
+		<div id="text">
+			<p id="company">Компания ООО «ГЕОТЕСТЕР»</p>
+			<p id="company_text">надежный поставщик испытательного оборудования <br> для дорожного строительства</p>
 		</div>
+	</div>
 	
 	<div id="phone">
 		<div class="wrapper">
@@ -23,7 +29,7 @@
 				<li><a href="#">О компании</a></li>
 			</ul>
 		
-			<div class="category">
+			<div class="category com">
 				<img src="imgs/Vector.png" alt="vec">
 				<p>О компании</p>
 			</div>	
@@ -49,65 +55,97 @@
 				
 			</div>
 		</div>
-	</div>	
-	</header>
+	</div>
+
+	<!--end header-->
+
+	<!--begin offer-->
 
 	<div id="offer">
 		<div id="img-offer">
-			<div class="category">
+			<div class="category off">
+				<div class="titles">
 					<img src="imgs/Vector.png" alt="vec">
 					<p>Мы предлагаем</p>
-			</div>	
-			<div id="inneroffer">			
+				</div>
+			</div>
+
+		<div id="inneroffer">	
+			<div id="inneroffer1">			
 				<div class="items">					
-					<img src="imgs/offer/1.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/1.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Оборудование для пробоподготовки и испытаний</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/2.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/2.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Полевые приборы</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/3.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/3.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Испытательные камеры</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/4.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/4.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Оборудование для механических испытаний</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
-		
+			</div>
+			
+			<div id="inneroffer2">	
 				<div class="items">
-					<img src="imgs/offer/5.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/5.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Геодезические приборы</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/6.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/6.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Современные вытяжные и сушильные шкафы</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/7.png" alt="offer">
-					<div class="btn_offer"><p>Приборы для контроля качества<p>
+					<div class="item">
+						<img src="imgs/offer/7.png" alt="offer">
+					</div>
+					<div class="btn_offer"><p>Приборы для контроля качества</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
 				</div>
 				<div class="items">
-					<img src="imgs/offer/8.png" alt="offer">
+					<div class="item">
+						<img src="imgs/offer/8.png" alt="offer">
+					</div>
 					<div class="btn_offer"><p>Контрольно-измерительное оборудование</p>
 					<div><img src="imgs/Arrow.png" alt="arrow"></div></div>
-				</div>	
-			</div>	
+				</div>				
+			   </div>	
+			</div>
 		</div>
 	</div>
 
+	<!--end offer-->
+
+	<!--begin certificates-->
+
 	<div id="certificates">
-		<div class="category">
-				<img src="imgs/Vector.png" alt="vec">
-				<p>Сертификаты это подтверждают</p>
+		<div class="category cat">
+				<div class="titles vh">
+					<img src="imgs/Vector.png" alt="vec">
+					<p>Сертификаты это подтверждают</p>
+				</div>
 		</div>
 		
 		<div class="buttons">
@@ -150,26 +188,42 @@
 		</div>
 	</div>
 
+<!--end certificates-->
+
+<!--begin provide-->
+
 	<div class="provide">
 		<div id="overlay1"></div>
-		<div class="wrapper wr">
-			<div class="category">
+
+		<div class="wrapper wr">				
+
+			<div class="category prov">
+				<div class="titles vh">
 					<img src="imgs/Vector.png" alt="vec">
 					<p>Обеспечиваем 100% качество</p>
+				</div>
 			</div>
-			<div class="description">
-				<p>	Оснащенность и уровень квалификации рабочих кадров производственной базы ООО «ГЕОТЕСТЕР» позволяют производить линейку оборудования в ручном, механизированном и автоматическом режиме управления.</p>
-				<p> Многие виды оборудования строительной лаборатории ООО «ГЕОТЕСТЕР», например, для испытаний геосинтетического и гидроизоляционного материала, не имеют аналогов в России.</p>
-				<p>	Все оборудование ООО «ГЕОТЕСТЕР», представленное в каталоге, обеспечит высокий уровень технической оснащенности лабораторий в соответствии с требованиями нормативных российских и зарубежных стандартов.</p>
-			</div>		
-		</div>
-		<div id="star">
-			<img src="imgs/provide/star.png" alt="star">
-		</div>
+
+			<div id="des_star">
+				<div class="description des_text">
+					<p>	Оснащенность и уровень квалификации рабочих кадров производственной базы ООО «ГЕОТЕСТЕР» позволяют производить линейку оборудования в ручном, механизированном и автоматическом режиме управления.</p>
+					<p> Многие виды оборудования строительной лаборатории ООО «ГЕОТЕСТЕР», например, для испытаний геосинтетического и гидроизоляционного материала, не имеют аналогов в России.</p>
+					<p>	Все оборудование ООО «ГЕОТЕСТЕР», представленное в каталоге, обеспечит высокий уровень технической оснащенности лабораторий в соответствии с требованиями нормативных российских и зарубежных стандартов.</p>
+				</div>
+
+				<div id="star">
+					<img src="imgs/provide/star.png" alt="star">
+				</div>
+			</div>
+
+		</div>		
 	</div>
 
+<!--end provide-->
+	
+<!--begin footer-->
 
-	<footer>	
+	<div id="footer">	
 		<div id="forma" class="modalDialog">				
 			<div>
 				<form action="#">
@@ -186,11 +240,13 @@
 		</div>
 
 		<div id="overlay2"></div>
-		<div class="wr">
-			<div class="category">
-					<img src="imgs/footer/Vector1.png" alt="vec">
-					<p>Мы с удовольствием Вас проконсультируем</p>
-			</div>
+		<div class="wr abc">
+				<div class="category cat">
+						<div class="titles vh">
+							<img src="imgs/footer/Vector1.png" alt="vec">
+							<p>Мы с удовольствием Вас проконсультируем</p>
+						</div>
+				</div>
 			<p id="request">Только оставьте заявку</p>
 			<div class="spec req">
 				<div class="tr1"></div>
@@ -198,7 +254,9 @@
 				<div class="tr2"></div>	
 			</div>	
 		</div>	
-	</footer>
+	</div>
+
+<!--end footer-->
 
 <script
   src="https://code.jquery.com/jquery-3.4.1.js"
