@@ -1,16 +1,28 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+img:not(#home img) {
+	max-width: 100%;
+	height: auto;
+}
+
 h2 {
 	color: black;
 }
-
 
 #head {
 	margin-top: 147px;	
 	width: 100%;	
 	height: 269px;
-	background: url("imgs/header/phone.png") 100% 100% no-repeat;
+	background: url("imgs/header/phone.png") no-repeat center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -29,49 +41,6 @@ h2 {
 	font-size: 18px;
 }
 
-@media all and (max-width: 1050px) {
-	#geo {
-		width: 300px;
-	}
-	#geo>img {
-		width: 300px;
-	}
-}
-@media all and (max-width: 850px) {
-	#geo {
-		width: 200px;
-	}
-	#geo>img {
-		width: 200px;
-	}
-}
-
-
-/**********menu**********/
-
-@media all and (min-width: 1800px) {
-	.wrapper {
-		margin-left: 356px;
-	}
-}
-
-@media all and (min-width: 1300px) {
-	.wrapper {
-		margin-left: 265px;		
-	}
-}
-
-@media all and (min-width: 800px) {
-	.wrapper {
-		margin-left: 165px;
-	}
-}
-
-@media all and (max-width: 800px) {
-	.wrapper {
-		margin-left: 30px;
-	}
-}
 
 
 #home img {
@@ -83,11 +52,11 @@ h2 {
 }
 
 ul {
+	margin-top: 12px;
 	font-family: 'Roboto', sans-serif;
 	font-size: 12px;
 	list-style: none;	
 	display: flex;	
-	align-items: center;
 	justify-content: start;			
 }
 li {
@@ -104,18 +73,21 @@ ul>li>a:active {
 }
 
 #phone {
-	background: url("imgs/header/1.png") left center no-repeat;		
+	max-width: 1920px;
+	background: url("imgs/header/1.png") no-repeat left center;		
+	margin: 0 auto;
 }
 
-header .category {
-	justify-content: start;	
-}
-
-.category {
+.category {	
 	font-family: 'Merriweather', serif;
-	font-size: 36px;
+	font-size: 36px;	
+}
+.com {
+	margin-top: 54px;
+	max-height: 46px;
 	display: flex;	
-	align-items: center;		
+	align-items: center;
+	justify-content: start;
 }
 .category img {
 	margin-right: 10px;
@@ -123,23 +95,21 @@ header .category {
 .description {
 	width: 65%;
 	min-height: 300px;	
+	margin-top: 30px;
+	line-height: 29px;
+	font-family: 'Roboto', sans-serif;	
 }
 
-#about_company {
-	display: flex;	
-	align-items: center;
-	margin-bottom: 50px;
-}
 
 .spec {	
 	display: flex;	
 	justify-content: start;
-	margin-top: 40px;
+	margin-top: 51px;
 }
 
 
 .sp {
-	width: 300px;
+	min-width: 250px;
 	height: 40px;
 	color: #FFFFFF;
 	background-color: #17594A;
@@ -165,13 +135,31 @@ header .category {
 
 /*****offer*****/
 
-#offer .category, #certificates .category {
-	justify-content: center;
+#offer {
+	margin-top: 50px;
 }
 #img-offer {	
 	height: 868px;
-	background: url("imgs/offer/phone.png") center no-repeat;		
+	background: url("imgs/offer/phone.png") no-repeat center; 		
 }
+.off {
+	height: 128px;	
+	display: flex;	
+	justify-content: center;
+	align-items: center;	
+}
+.titles {	
+	display: flex;	
+	justify-content: center;
+	align-items: center;
+}
+.cat {
+	margin: 74px 0 39px 0;	
+}
+.vh {
+	height: 46px;
+}
+
 
 .items img[alt="arrow"] {	
 	margin-left: 10px;	
@@ -204,9 +192,9 @@ header .category {
 }
 .items {
 	background-color: #FFFFFF;
-	margin: 0 50px 50px 0;
+	margin: 25px;
 	width: 250px;
-	height: 316px;
+	height: 309px;
 	display: flex;
 	flex-direction: column;	
 	justify-content: flex-end;		
@@ -214,82 +202,28 @@ header .category {
 
 #inneroffer {
 	width: 100%;	
-	margin: 0 auto;	
-	max-width: 1300px; /*************/
+	max-width: 1200px;
+	margin: 0 auto;		
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;	
+	align-items: center;	
+}
+
+#inneroffer1 {	
+	display: flex;
+}
+#inneroffer2 {	
+	display: flex;
+}
+
+.items>.item {
+	height: 259px;
+	display: flex;
+	align-items: center;
 	justify-content: center;
-	align-content: center;
-}
-.items img[alt="offer"] {	
-		width: 100%;	
-	}
-
-
-@media all and (min-width: 1000px) and (max-width: 1232px) {	
-	#img-offer {	
-		height: 720px;						
-	}
-	#inneroffer {		
-		width: 100%;	
-		margin-top: 20px;		
-	}
-	.items {		
-		margin: 0 30px 30px 0;	
-		width: 210px;
-		height: auto;						
-	}
-				
-}
-@media all and (min-width: 740px) and (max-width: 1000px) {	
-	#img-offer {	
-		height: 1100px;	
-		background: url("imgs/offer/phone.png") no-repeat;
-		background-color: #eee;				
-	}
-	#inneroffer {		
-		width: 50%;	
-		margin-top: 10px;		
-	}
-	.items {		
-		margin: 0 20px 20px 0;
-		width: 155px;
-		height: auto;					
-	}	
-	.btn_offer > p {
-		font-size: 12px;
-	}		
+	background-color: #FFF;
 }
 
-@media all and (min-width: 480px) and (max-width: 740px) {
-	#inneroffer {		
-		width: 80%;	
-		margin-top: 10px;			
-	}
-	.items {		
-		margin: 0 20px 20px 0;
-		width: 160px;
-		height: auto;					
-	}
-	.btn_offer {
-		display: none;
-	}
-}
-
-@media all and (max-width: 480px) {
-	#inneroffer {		
-		width: 300px;	
-		margin-top: 10px;			
-	}
-	.items {		
-		margin: 0 20px 20px 0;
-		width: 120px;
-		height: auto;					
-	}
-	.btn_offer {
-		display: none;
-	}
-}
 
 /*****certificates*****/
 
@@ -299,7 +233,7 @@ header .category {
 	justify-content: center;
 	font-family: 'Roboto', sans-serif;
 	font-size: 13px;
-	margin-bottom: 50px;
+	margin-bottom: 40px;
 	color: rgba(0,0,0,.5);
 	flex-wrap: wrap;
 }
@@ -325,11 +259,14 @@ header .category {
 
 @media all and (min-width: 800px) and (max-width: 1180px) {
 	.buttons {	
-		margin: 0 auto;
+		margin: 40px auto;
 		width: 700px;					
 	}
 }
 
+#certificates {
+	margin-bottom: 141px;
+}
 
 #certificat {	
 	display: flex;
@@ -351,91 +288,113 @@ header .category {
 		width: 70%;
 	}
 }
-/*.cert img {
-	width: 100%;
-}*/
 
 /******provide*******/
 
-.provide {
-	margin-top: 30px;
-	min-height: 416px;
-	background: url("imgs/provide/rawpixel-743065-unsplash.png") center no-repeat;	
-	position: relative;		
+.prov{
+	position: absolute;
+	top: 58px;		
+	left: 357px;
 }
 
-#star {
-	position: absolute;
-	top: 50px;
-	right: 50px;	
+.provide {
+	margin: 50px auto;
+	min-height: 416px;
+	background: url("imgs/provide/rawpixel-743065-unsplash.png") center no-repeat;	
+	display: flex;	
+	align-items: center;			
+	width: 100%;
+	max-width: 1920px;
+	position: relative;
+	-webkit-background-size: cover;
+	background-size: cover;
 }
 
 #overlay1 {
-	position: absolute;	
+	margin: 0 auto;
 	width: 100%;	
-	min-height: 416px;
-	background: url("imgs/provide/Rectangle.png") center no-repeat;	
+	max-width: 1920px;
+	height: 100%;
+	background: url("imgs/provide/Rectangle.png") center no-repeat;		
+	-webkit-background-size: cover;
+	background-size: cover;	
 	opacity: 0.9;
-	z-index: 0;	
+	z-index: 0;
+	position: absolute;	
 }
 .wr {
 	width: 100%;
-	position: absolute;	
-	z-index: 1;
+	z-index: 9;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;		
 }
+#des_star {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	width: 100%;
+	max-width: 1920px;
+	margin-top: 80px;
+}
+#star {
+	position: absolute;
+	top: 80px;		
+	right: 60px;
+}
+
 
 
 /***footer**/
-
-footer .category, .req {
-	display: flex;
-	justify-content: center;
-}
 
 #request {
 	font-family: 'Roboto', sans-serif;
 	font-size: 26px;
 	text-align: center;
+	margin-top: -20px;
+}
+.req {
+	margin-top: 10px;
 }
 
-footer {	
-	margin-top: 40px;
+#footer {	
+	margin: 40px auto;
 	height: 352px;
 	color: #FFFFFF;
 	background: url("imgs/footer/image2.png") center no-repeat;	
+	max-width: 1920px;
 	position: relative;	
 	background-size: cover;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
-	-moz-background-size: cover;
+	-moz-background-size: cover;	
 }
 #overlay2 {
 	position: absolute;	
 	width: 100%;	
-	height: 352px;
+	height: 100%;
 	background: url("imgs/footer/Rectangle.png") center no-repeat;	
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
 	opacity: 0.9;
 	z-index: 0;	
 }
-
-@media all and (min-width: 1150px) {			
-	.description p {
-		font-family: 'Roboto', sans-serif;
-		font-size: 20px;
-	}
+.abc {
+	position: absolute;
+	z-index: 5;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
 }
 
-@media all and (min-width: 800px) and (max-width: 1150px) {
-	.description p {		
-		font-size: 16px;
-	}
-}
 
-@media all and (max-width: 800px) {
-	.description p {		
-		font-size: 12px;
-	}
-}
 
 /***Модальные окна***/
 
@@ -517,5 +476,156 @@ form .bd {
 
 
 
+/***********media запросы*********/
 
+@media all and (min-width: 1280px)  {
+	#geo {
+		width: 498px;
+	}
+	#geo>img {
+		width: 100%;
+	}
+	.description p {		
+		font-size: 20px;
+	}
+	.wrapper {
+		margin-left: 356px;
+	}
+}
+
+@media all and (min-width: 1060px) and (max-width: 1280px)  {
+	#geo {
+		width: 300px;
+	}
+	#geo>img {
+		width: 300px;
+	}
+	.description p {		
+		font-size: 18px;
+	}
+	.wrapper {
+		margin-left: 200px;
+	}
+	.prov {
+		left: 200px;
+	}
+	#inneroffer {				
+		max-width: 1024px;	
+		margin: 0 auto;	
+	}
+	#inneroffer1, #inneroffer2 {
+		margin-top: 50px;
+	}
+	.items, .items img[alt="offer"] {		 	
+		width: 210px;
+		height: 210px;						
+	}	
+}
+
+@media all and (min-width: 1060px)  {
+	#about_company {
+		display: flex;	
+		align-items: center;
+		margin-bottom: 50px;
+	}	
+}
+
+@media all and (max-width: 1060px)  {
+	.wrapper {
+		margin-left: 30px;
+	}
+	.prov {
+		left: 30px;
+		top: 10px;
+	}
+	#des_star {	
+		margin-top: 20px;
+	}
+	.description p {		
+		font-size: 0.8em;
+	}
+	#about_company {
+		display: flex;	
+		flex-direction: column;		
+		align-items: center;
+		margin: 50px 0 50px 0;		
+	}
+	.description {
+		order: 1;
+	}
+	#geo {
+		width: 200px;
+	}
+	#geo>img {
+		width: 200px;
+	}
+	#inneroffer {		
+		max-width: 800px;
+		width: 380px;			
+	}
+	#inneroffer1, #inneroffer2 {	
+		height: 370px;		
+		flex-flow: row wrap;		
+	}
+	.items, .items img[alt="offer"] {		 	
+		width: 140px;
+		height: 140px;						
+	}
+	.items {
+		margin: 20px;
+	}
+	.btn_offer {
+		font-size: 10px;
+		height: 40px;
+		text-align: left;		
+		word-wrap: break-word;
+	}
+	
+	.btn_offer>p {
+		margin-left: -20px;
+	}
+	img[alt="star"] {
+		width: 250px;
+		height: auto;
+	}
+}
+
+@media all and (max-width: 800px)  {
+	.category {
+		font-size: 28px;
+	}
+	img[alt="star"] {
+		display: none;
+	}
+	#request {
+		font-size: 20px;
+	}	
+	.vh {
+		height: 36px;
+		margin-top: -10px;
+		margin-bottom: 20px;
+	}
+}
+
+
+@media all and (max-width: 500px)  {
+	#company {		
+		font-size: 28px;	
+	}
+
+	#company_text {	
+		font-size: 12px;
+	}
+	.category {	
+		font-size: 24px;	
+	}
+	img[alt="vec"] {
+		width: 15px;
+		height: 25px;
+	}
+	.sp {
+		font-size: 12px;
+		word-wrap: break-word;
+	}		
+}
 
